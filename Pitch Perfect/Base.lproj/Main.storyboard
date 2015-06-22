@@ -115,8 +115,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="PlaySlow:" destination="lhS-lD-LSP" eventType="touchUpInside" id="Fw9-z0-M7Z"/>
-                                    <action selector="playSlowAudio:" destination="lhS-lD-LSP" eventType="touchUpInside" id="ebg-mR-Fzh"/>
+                                    <action selector="playSlowAudio:" destination="lhS-lD-LSP" eventType="touchUpInside" id="unc-Ao-95n"/>
                                 </connections>
                             </button>
                         </subviews>
