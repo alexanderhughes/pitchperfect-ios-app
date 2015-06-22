@@ -118,28 +118,62 @@
                                     <action selector="playSlowAudio:" destination="lhS-lD-LSP" eventType="touchUpInside" id="unc-Ao-95n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5y-PY-v68">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="PlayFast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="lhS-lD-LSP" eventType="touchUpInside" id="7tv-kX-l68"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4A-Xg-gKz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="StopButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButton:" destination="lhS-lD-LSP" eventType="touchUpInside" id="Zz3-3C-K5G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="99U-4c-vzK" firstAttribute="top" secondItem="B1F-0f-uSH" secondAttribute="bottom" constant="50" id="2Pb-53-1kE"/>
                             <constraint firstItem="99U-4c-vzK" firstAttribute="leading" secondItem="UAO-PA-aRS" secondAttribute="leadingMargin" constant="30" id="AB9-KX-lNV"/>
+                            <constraint firstItem="V5y-PY-v68" firstAttribute="top" secondItem="B1F-0f-uSH" secondAttribute="bottom" constant="50" id="JMi-SI-6kJ"/>
+                            <constraint firstAttribute="centerX" secondItem="n4A-Xg-gKz" secondAttribute="centerX" id="qON-8E-HKp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V5y-PY-v68" secondAttribute="trailing" constant="30" id="seT-N5-Hx0"/>
+                            <constraint firstItem="BU2-l1-QOQ" firstAttribute="top" secondItem="n4A-Xg-gKz" secondAttribute="bottom" constant="65" id="yKO-Sz-JOd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="99U-4c-vzK"/>
+                                <exclude reference="V5y-PY-v68"/>
+                                <exclude reference="n4A-Xg-gKz"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2Pb-53-1kE"/>
                                 <exclude reference="AB9-KX-lNV"/>
+                                <exclude reference="JMi-SI-6kJ"/>
+                                <exclude reference="seT-N5-Hx0"/>
+                                <exclude reference="qON-8E-HKp"/>
+                                <exclude reference="yKO-Sz-JOd"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="99U-4c-vzK"/>
+                                <include reference="V5y-PY-v68"/>
+                                <include reference="n4A-Xg-gKz"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2Pb-53-1kE"/>
                                 <include reference="AB9-KX-lNV"/>
+                                <include reference="JMi-SI-6kJ"/>
+                                <include reference="seT-N5-Hx0"/>
+                                <include reference="qON-8E-HKp"/>
+                                <include reference="yKO-Sz-JOd"/>
                             </mask>
                         </variation>
                     </view>
@@ -185,6 +219,7 @@
     </scenes>
     <resources>
         <image name="Microphone" width="100" height="100"/>
+        <image name="PlayFast" width="100" height="100"/>
         <image name="PlaySlow" width="100" height="100"/>
         <image name="StopButton" width="50" height="50"/>
     </resources>
